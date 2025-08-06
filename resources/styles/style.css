@@ -671,6 +671,10 @@ header .mobil {
     align-items: center;
   }
 
+  .location .mobil .map{
+  width: 100%;
+  }
+
   .location .mobil h1{
     color:#4a4a4a;
     text-decoration: underline;
