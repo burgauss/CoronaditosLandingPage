@@ -163,7 +163,7 @@ header .mobil {
       height: 8rem;
     }
 
-    header .mobil .top-menu {
+    header .mobil .top-menu .upper-menu {
       height: 100%;
       display: flex;
       justify-content: space-around;
