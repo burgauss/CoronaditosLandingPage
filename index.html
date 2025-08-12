@@ -34,7 +34,7 @@
             </nav>
         </div>
         
-        <div class="mobil">
+        <div class="mobil" id="mobilDisplay">
             <div class="top-menu">
                 <div class="upper-menu">
                     <div class="whatsapp-icon">
@@ -45,26 +45,45 @@
                         </a>
                     </div>
                     <div class="logo">
-                        <img src="./resources/images/CoronaditosLogoPNG.png" alt="Coronaditos Logo" style="width: 50%; height: auto;"> 
+                        <img src="./resources/images/CoronaditosLogoPNG_2.png" alt="Coronaditos Logo" style="width: 50%; height: auto;"> 
                     </div>
                     <div class="menu">
-                        <button  class="hamburgermenu-icon headerIcon">
+                        <button  class="hamburgermenu-icon headerIcon"  id="menuBtn">
                             <img src="./resources/images/134216_menu_lines_hamburger_icon.svg" alt="menu" >
                         </button>
                     </div>
                 </div>
-                <div class="lower-menu">
-                    <nav>
+                <div class="lower-menu" id="lowerMenu">
                         <ul>
-                            <li><a href="#description-section">Descripción</a></li>
-                            <li><a href="#rooms-section">Cuartos</a></li>
-                            <li><a href="#location-section">Lugar</a></li>
-                            <li><a href="#contacto-section">Contacto</a></li>
+                            <li>
+                                <a href="#rooms-section">
+                                    <img src="./resources/images/details.png" alt="descripcion" width="35">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#location-section">
+                                    <img src="./resources/images/map.png" alt="locacion" width="35">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contacto-section">
+                                    <img src="./resources/images/customer-service.png" alt="contacto" width="35">
+                                </a>
+                            </li>
                         </ul>
-                    </nav>  
                 </div>
             </div>
+            <script>
+                const menuBtn = document.getElementById('menuBtn');
+                const lowerMenu = document.getElementById('lowerMenu');
+                const headerMobil = document.getElementById('mobilDisplay');
 
+                menuBtn.addEventListener('click', () => {
+                    lowerMenu.classList.toggle('show');
+                    headerMobil.classList.toggle('expanded');
+                });
+
+            </script>
         </div>
 
     </header>

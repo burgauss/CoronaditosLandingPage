@@ -138,7 +138,7 @@ header .mobil {
     border-radius: 25px;
   }
 
-  header nav li a:hover {
+  header .desktop nav li a:hover {
     background-color: #3D3D3D;
     color: white
   }
@@ -160,7 +160,8 @@ header .mobil {
       z-index: 100;
       width: 100%;
       border-bottom: solid 1px gray;
-      height: 8rem;
+      height: 6rem;
+      transition: height 1s ease;
     }
 
     header .mobil .top-menu .upper-menu {
@@ -189,6 +190,45 @@ header .mobil {
     .headerIcon:active{
       opacity: 0.7;
     }
+
+    header .mobil .top-menu .lower-menu {
+      height: 100%;
+      /* visibility: hidden; */
+      opacity: 0;
+      transition: opacity 1s ease;
+
+    }
+
+    header .mobil .lower-menu img{
+      padding: 0;
+    }
+
+    header .mobil .lower-menu ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    header .mobil .lower-menu li{
+      margin: 0;
+    }
+
+    header .mobil .lower-menu.show{
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* #lowerMenu img{
+      opaci
+    } */
+
+    header .mobil.expanded {
+      height: 8rem;
+    }
+    
 
   }
 
