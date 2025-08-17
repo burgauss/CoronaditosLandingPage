@@ -564,6 +564,7 @@ header .mobil {
     }
 
     .rooms .mobil{
+      scroll-margin-top: 130px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -571,6 +572,7 @@ header .mobil {
     }
 
     .slideshow-container-rooms-mobil {
+      scroll-margin-top: 200px;
       width: 100%;
       flex-shrink: 0;
       position: relative;
