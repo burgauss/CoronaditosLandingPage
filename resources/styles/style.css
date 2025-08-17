@@ -193,7 +193,7 @@ header .mobil {
 
     header .mobil .top-menu .lower-menu {
       height: 100%;
-      /* visibility: hidden; */
+      visibility: hidden;
       opacity: 0;
       transition: opacity 1s ease;
 
