@@ -221,10 +221,6 @@ header .mobil {
       visibility: visible;
     }
 
-    /* #lowerMenu img{
-      opaci
-    } */
-
     header .mobil.expanded {
       height: 8rem;
     }
