@@ -819,12 +819,27 @@ img {
   align-items: center;
 }
 
+.linkContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .whatsappLink:link, .whatsappLink:visited{
+  text-decoration: none;
+}
+
+.BookingLink:link, .BookingLink:visited{
+  text-decoration: none;
+}
+
+.AirbnbLink:link, .AirbnbLink:visited{
   text-decoration: none;
 }
 
 .whatsappButton{
   display: flex;
+  width: 100%;
   justify-content: space-around;
   font-size: 1rem;
   border-radius: 20px;
@@ -834,9 +849,51 @@ img {
   padding: 10px;
 }
 
+.BookingButton{
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #003A9A;
+  /* box-shadow: 0 0 20px black;  */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.AirbnbButton{
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #FF5A5F;
+  /* box-shadow: 0 0 20px black;  */
+  cursor: pointer;
+  padding: 10px;
+}
+
 .whatsappLink img{
   height: 30px;
   padding-right: 8px;
+}
+
+.BookingLink img{
+  height: 30px;
+}
+
+.AirbnbLink img{
+  height: 30px;
+}
+
+.BookingButton .button-text{
+  /* position: absolute; */
+  /* left: 30%; */
+  transform: translateX(-95%); /*true horizontal centering*/
+}
+
+.AirbnbButton .button-text{
+  transform: translateX(-110%); /*true horizontal centering*/
 }
 
 span.button-text{
@@ -848,6 +905,14 @@ span.button-text{
 
 .whatsappButton:hover{
   background-color: #2bb75f;
+}
+
+.BookingButton:hover{
+  background-color: #002f7f;
+}
+
+.AirbnbButton:hover{
+  background-color: #e0484d;
 }
 
 .contact-form{
