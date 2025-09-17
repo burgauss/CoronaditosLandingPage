@@ -1019,6 +1019,25 @@ textarea::placeholder, input::placeholder{
     white-space: nowrap;  
   }
 
+  
+.AirbnbButton .button-text{
+    margin-left: -60px;
+}
+
+.AirbnbButton img{
+  margin-left: -75px;
+}
+
+.BookingButton .button-text{
+    margin-left: -60px;
+}
+
+.BookingButton img{
+  margin-left: -75px;
+}
+
+
+
   .contacto-right{
     width: 100%;
   }
