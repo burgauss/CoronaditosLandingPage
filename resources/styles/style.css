@@ -122,7 +122,9 @@ img {
 
   header{
     position: fixed;
-    background-color: white;
+    background-image: url("../images/FondoCoronaditosWeb.svg");
+    background-repeat: no-repeat;
+    background-size: cover; 
     top:0;
     z-index: 100;
     width: 100%;
@@ -275,12 +277,20 @@ img {
   /* End of Header section */
   /* main content  */
 
+  .main-content{
+    background-image: url("../images/FondoCoronaditosWeb.svg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+  
+  /*End of main content */
+
   /* banner section  */
   .banner .desktop{
     /* background-color: lightgray; */
-    background-image: url("../images/FondoBanner_2.svg");
+    /* background-image: url("../images/FondoBanner_2.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     display:flex;
     justify-content: center;
     /* align-items: center; */
@@ -375,9 +385,9 @@ img {
     justify-content: center;
     align-items: center;
     overflow: hidden; */
-    background-image: url("../images/FondoCoronaditosWeb.svg");
+    /* background-image: url("../images/FondoCoronaditosWeb.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height: 600px;
   }
 
