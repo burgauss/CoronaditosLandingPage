@@ -29,7 +29,6 @@ function currentSlide(n) {
 }
 
 function showSlides(key,n, className) {
-    debugger;
     let i;
     let slides = document.getElementsByClassName(className);
     if (n > slides.length) { carrouselObject[key].index = 1 }
